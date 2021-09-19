@@ -1,5 +1,4 @@
 module full_adder_testbench;
-
     reg a;
     reg b;
     reg c_in;
@@ -56,5 +55,4 @@ module full_adder_testbench;
         #10
         ;
     end
-
 endmodule

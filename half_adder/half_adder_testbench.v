@@ -1,5 +1,4 @@
 module half_adder_testbench;
-
     reg a;
     reg b;
     wire [3:0] s;
@@ -10,7 +9,8 @@ module half_adder_testbench;
     half_adder C (a, b, s[2], c[2]);
     half_adder D (a, b, s[3], c[3]);
 
-    initial begin $dumpfile("dump.vcd");
+    initial begin
+        $dumpfile("dump.vcd");
         $dumpvars(0, half_adder_testbench);
     end
 
@@ -29,5 +29,4 @@ module half_adder_testbench;
         #10
         ;
     end
-
 endmodule

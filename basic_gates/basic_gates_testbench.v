@@ -1,5 +1,4 @@
 module basic_gates_testbench;
-
     reg a;
     reg b;
     wire [7:0] x;
@@ -32,5 +31,4 @@ module basic_gates_testbench;
         #10
         ;
     end
-
 endmodule

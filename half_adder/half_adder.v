@@ -3,9 +3,7 @@ module XOR (
     input wire b,
     output wire y
 );
-
     assign y = a ^ b;
-
 endmodule
 
 module AND (
@@ -13,9 +11,7 @@ module AND (
     input wire b,
     output wire y
 );
-
     assign y = a & b;
-
 endmodule
 
 module half_adder (
@@ -24,8 +20,6 @@ module half_adder (
     output wire s,
     output wire c
 );
-
     XOR A (a, b, s);
     AND B (a, b, c);
-
 endmodule

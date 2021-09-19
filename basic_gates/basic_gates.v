@@ -3,9 +3,7 @@ module AND (
     input wire b,
     output wire y
 );
-
     assign y = a & b;
-
 endmodule
 
 module OR (
@@ -13,18 +11,14 @@ module OR (
     input wire b,
     output wire y
 );
-
     assign y = a | b;
-
 endmodule;
 
 module NOT (
     input wire a,
     output wire y
 );
-
     assign y =  !a;
-
 endmodule;
 
 module XOR (
@@ -32,9 +26,7 @@ module XOR (
     input wire b,
     output wire y
 );
-
     assign y = a ^ b;
-
 endmodule
 
 module NAND (
@@ -42,11 +34,9 @@ module NAND (
     input wire b,
     output wire y
 );
-
     wire x;
     AND A (a, b, x);
     NOT B (x, y);
-
 endmodule
 
 module NOR (
@@ -54,11 +44,9 @@ module NOR (
     input wire b,
     output wire y
 );
-
     wire x;
     OR  A (a, b, x);
     NOT B (x, y);
-
 endmodule
 
 module XNOR (
@@ -66,9 +54,7 @@ module XNOR (
     input wire b,
     output wire y
 );
-
     wire x;
     XOR A (a, b, x);
     NOT B (x, y);
-
 endmodule
